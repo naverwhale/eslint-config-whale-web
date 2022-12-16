@@ -1,0 +1,23 @@
+{
+    "name": "@naverwhale/eslint-config-whale-web",
+    "version": "1.1.1",
+    "description": "lint rules for whale web project",
+    "main": "index.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/naverwhale/eslint-config-whale-web.git"
+    },
+    "author": "NAVER Corp.",
+    "license": "MIT",
+    "devDependencies": {
+        "eslint": "^5.16.0",
+        "husky": "^8.0.2",
+        "lint-staged": "^13.1.0"
+    },
+    "lint-staged": {
+        "*.js": "eslint --cache --fix"
+    },
+    "scripts": {
+        "prepare": "husky install"
+    }
+}
