@@ -1,6 +1,6 @@
 {
     "name": "@naverwhale/eslint-config-whale-web",
-    "version": "1.1.1",
+    "version": "1.1.2",
     "description": "lint rules for whale web project",
     "main": "index.js",
     "repository": {

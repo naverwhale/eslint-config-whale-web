@@ -21,7 +21,7 @@ module.exports = {
         sourceType: "module",
         project: "./tsconfig.json"
     },
-    plugins: ["react", "@typescript-eslint", "functional"],
+    plugins: ["react", "@typescript-eslint", "functional", "import"],
     settings: {
         react: {
             version: "detect"
@@ -39,8 +39,7 @@ module.exports = {
             { ignoreArrowShorthand: true, ignoreVoidOperator: true }
         ],
         "no-duplicate-imports": 0,
-        "@typescript-eslint/no-duplicate-imports": 2,
-        "@typescript-eslint/no-implicit-any-catch": 2,
+        "import/no-duplicates": 2,
         "no-invalid-this": 0,
         "@typescript-eslint/no-invalid-this": 2,
         "@typescript-eslint/no-invalid-void-type": 2,
@@ -48,7 +47,7 @@ module.exports = {
         "@typescript-eslint/no-loop-func": 2,
         "no-loss-of-precision": 0,
         "@typescript-eslint/no-loss-of-precision": 2,
-        "@typescript-eslint/no-parameter-properties": 0,
+        "@typescript-eslint/parameter-properties": 0,
         "no-redeclare": 0,
         "@typescript-eslint/no-redeclare": 2,
         "no-shadow": 0,
